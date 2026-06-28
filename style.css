@@ -1,0 +1,145 @@
+:root {
+  --font-main: 'Outfit', sans-serif;
+  --color-text: #ffffff;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body, html {
+  width: 100vw;
+  height: 100dvh;
+  overflow: hidden; /* Prevent scrolling outside carousel container */
+  font-family: var(--font-main);
+  color: var(--color-text);
+  background-color: #000;
+  -webkit-font-smoothing: antialiased;
+}
+
+.carousel-container {
+  display: flex;
+  width: 100vw;
+  height: 100dvh;
+  overflow-x: scroll;
+  overflow-y: hidden;
+  scroll-snap-type: x mandatory;
+  scroll-behavior: smooth;
+  /* Hide scrollbar for cleaner look */
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+.carousel-container::-webkit-scrollbar {
+  display: none;
+}
+
+.slide {
+  flex: 0 0 100vw;
+  height: 100dvh;
+  scroll-snap-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  overflow: hidden;
+}
+
+/* Premium gradients for slides */
+.slide-1 {
+  background: linear-gradient(135deg, #1f005c, #5b0060, #870160, #ac255e, #ca485c, #e16b5c, #f39060, #ffb56b);
+}
+
+.slide-2 {
+  background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+}
+
+.slide-3 {
+  background: linear-gradient(135deg, #2b5876, #4e4376);
+}
+
+.content {
+  text-align: center;
+  padding: 2rem;
+  z-index: 10;
+  opacity: 0; /* JS will handle showing it via animation */
+}
+
+h1 {
+  font-size: 3.5rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+  letter-spacing: -1px;
+}
+
+h2 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+
+p {
+  font-size: 1.2rem;
+  font-weight: 300;
+  opacity: 0.9;
+  margin-bottom: 2rem;
+}
+
+/* Indicators */
+.swipe-indicator {
+  display: flex;
+  gap: 8px;
+  justify-content: center;
+  margin-top: 2rem;
+}
+
+.dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.4);
+  animation: pulse 2s infinite;
+}
+
+.dot:nth-child(1) { animation-delay: 0s; }
+.dot:nth-child(2) { animation-delay: 0.2s; }
+.dot:nth-child(3) { animation-delay: 0.4s; }
+
+@keyframes pulse {
+  0% { transform: scale(1); opacity: 0.4; }
+  50% { transform: scale(1.5); opacity: 1; }
+  100% { transform: scale(1); opacity: 0.4; }
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* Button */
+.cta-button {
+  background: rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  padding: 1rem 2rem;
+  border-radius: 30px;
+  color: white;
+  font-size: 1.2rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-family: inherit;
+}
+
+.cta-button:hover {
+  background: rgba(255, 255, 255, 0.3);
+  transform: translateY(-2px);
+  box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+}
+
+.cta-button:active {
+  transform: translateY(0);
+}
