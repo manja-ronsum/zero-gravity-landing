@@ -262,26 +262,13 @@ p {
   transform: scale(0.95);
 }
 
-/* Slide 3 Layout */
-.slide-3 .content {
-  display: flex;
-  flex-direction: column;
-  height: 100%;
-  width: 100%;
-  padding: 4rem 1.5rem 2rem 1.5rem;
-}
-
-.slide-3 h2 {
-  flex-shrink: 0;
-  margin-bottom: 1rem;
-}
-
+/* Map Wrapper */
 .map-wrapper {
   flex-grow: 0;
   width: 90%;
   max-width: 400px;
   height: 40vh;
-  margin: auto;
+  margin: 1.5rem auto;
   /* 上下左右のエッジを15pxだけグラデーションで透過させて溶け込ませる */
   -webkit-mask-image: 
     linear-gradient(to right, transparent, black 15px, black calc(100% - 15px), transparent),
