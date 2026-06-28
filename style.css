@@ -198,9 +198,15 @@ p {
   flex-grow: 1;
   width: 100%;
   margin: 0;
-  /* マップの上下をグラデーションで透過させて背景に溶け込ませる */
-  -webkit-mask-image: linear-gradient(to bottom, transparent 0%, black 10%, black 90%, transparent 100%);
-  mask-image: linear-gradient(to bottom, transparent 0%, black 10%, black 90%, transparent 100%);
+  /* 上下左右のエッジを15pxだけグラデーションで透過させて溶け込ませる */
+  -webkit-mask-image: 
+    linear-gradient(to right, transparent, black 15px, black calc(100% - 15px), transparent),
+    linear-gradient(to bottom, transparent, black 15px, black calc(100% - 15px), transparent);
+  -webkit-mask-composite: source-in;
+  mask-image: 
+    linear-gradient(to right, transparent, black 15px, black calc(100% - 15px), transparent),
+    linear-gradient(to bottom, transparent, black 15px, black calc(100% - 15px), transparent);
+  mask-composite: intersect;
 }
 
 .map-wrapper iframe {
