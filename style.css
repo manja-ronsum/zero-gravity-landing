@@ -277,9 +277,11 @@ p {
 }
 
 .map-wrapper {
-  flex-grow: 1;
-  width: 100%;
-  margin: 0;
+  flex-grow: 0;
+  width: 90%;
+  max-width: 400px;
+  height: 40vh;
+  margin: 1rem auto;
   /* 上下左右のエッジを15pxだけグラデーションで透過させて溶け込ませる */
   -webkit-mask-image: 
     linear-gradient(to right, transparent, black 15px, black calc(100% - 15px), transparent),
