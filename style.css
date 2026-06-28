@@ -173,6 +173,95 @@ p {
   display: block;
 }
 
+/* Slide 2: Details Layout */
+.details-card {
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 20px;
+  padding: 1.5rem;
+  margin-bottom: 1.5rem;
+  text-align: left;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.15);
+  width: 100%;
+  max-width: 400px;
+}
+
+.details-list {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 1rem 0;
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+}
+
+.details-list li {
+  display: flex;
+  align-items: flex-start;
+  gap: 1rem;
+  font-size: 1.05rem;
+  line-height: 1.5;
+}
+
+.details-list .icon {
+  font-size: 1.5rem;
+  flex-shrink: 0;
+}
+
+.details-list .text strong {
+  color: #ffb56b;
+  font-size: 1.2rem;
+}
+
+.details-list .text small {
+  font-size: 0.85rem;
+  opacity: 0.8;
+}
+
+.notes {
+  border-top: 1px dashed rgba(255, 255, 255, 0.3);
+  padding-top: 1rem;
+}
+
+.notes p {
+  font-size: 0.85rem;
+  opacity: 0.7;
+  margin-bottom: 0.4rem;
+  line-height: 1.4;
+}
+
+.notes p:last-child {
+  margin-bottom: 0;
+}
+
+.line-section {
+  text-align: center;
+  width: 100%;
+}
+
+.line-text {
+  font-size: 0.95rem;
+  margin-bottom: 1rem;
+  line-height: 1.5;
+}
+
+.line-button {
+  display: inline-block;
+  background-color: #06C755; /* LINE Official Color */
+  color: #fff;
+  text-decoration: none;
+  font-weight: 700;
+  padding: 1rem 2rem;
+  border-radius: 30px;
+  box-shadow: 0 4px 15px rgba(6, 199, 85, 0.4);
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.line-button:active {
+  transform: scale(0.95);
+}
+
 /* Slide 3 Layout */
 .slide-3 .content {
   display: flex;
