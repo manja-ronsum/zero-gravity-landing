@@ -286,15 +286,6 @@ p {
   margin: 0;
   border-radius: 0;
   overflow: hidden;
-  /* 上下左右のエッジを15pxだけグラデーションで透過させて溶け込ませる */
-  -webkit-mask-image: 
-    linear-gradient(to right, transparent, black 15px, black calc(100% - 15px), transparent),
-    linear-gradient(to bottom, transparent, black 15px, black calc(100% - 15px), transparent);
-  -webkit-mask-composite: source-in;
-  mask-image: 
-    linear-gradient(to right, transparent, black 15px, black calc(100% - 15px), transparent),
-    linear-gradient(to bottom, transparent, black 15px, black calc(100% - 15px), transparent);
-  mask-composite: intersect;
 }
 
 .map-wrapper iframe {
