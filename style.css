@@ -56,7 +56,9 @@ body, html {
 }
 
 .slide-2 {
-  background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+  background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.8)), url('images/rude.webp');
+  background-size: cover;
+  background-position: center;
 }
 
 .slide-3 {
