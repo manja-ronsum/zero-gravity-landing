@@ -410,12 +410,12 @@ p {
 .contact-btn {
   display: block;
   text-align: center;
-  padding: 1rem;
-  border-radius: 30px;
+  padding: 1.2rem;
+  border-radius: 40px;
   color: white;
   text-decoration: none;
-  font-size: 1.2rem;
-  font-weight: 600;
+  font-size: 1.5rem;
+  font-weight: 700;
   transition: all 0.3s ease;
   width: 100%;
 }
@@ -432,12 +432,12 @@ p {
 }
 
 .popopo-btn {
-  background: linear-gradient(135deg, #ff6b6b, #ff8e8b);
+  background: #1DA1F2;
   border: none;
-  box-shadow: 0 4px 15px rgba(255, 107, 107, 0.4);
+  box-shadow: 0 4px 15px rgba(29, 161, 242, 0.4);
 }
 
 .popopo-btn:hover {
   transform: translateY(-2px);
-  box-shadow: 0 6px 20px rgba(255, 107, 107, 0.6);
+  box-shadow: 0 6px 20px rgba(29, 161, 242, 0.6);
 }
