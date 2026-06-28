@@ -34,7 +34,7 @@ document.addEventListener('DOMContentLoaded', () => {
     button.addEventListener('click', () => {
       alert('Get Started clicked!');
       // Could also reset carousel back to start:
-      // container.scrollTo({ left: 0, behavior: 'smooth' });
+      // container.scrollTo({ top: 0, behavior: 'smooth' });
     });
   }
 });

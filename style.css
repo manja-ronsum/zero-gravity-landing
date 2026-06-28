@@ -21,11 +21,12 @@ body, html {
 
 .carousel-container {
   display: flex;
+  flex-direction: column;
   width: 100vw;
   height: 100dvh;
-  overflow-x: scroll;
-  overflow-y: hidden;
-  scroll-snap-type: x mandatory;
+  overflow-x: hidden;
+  overflow-y: scroll;
+  scroll-snap-type: y mandatory;
   scroll-behavior: smooth;
   /* Hide scrollbar for cleaner look */
   -ms-overflow-style: none;
@@ -37,7 +38,8 @@ body, html {
 }
 
 .slide {
-  flex: 0 0 100vw;
+  flex: 0 0 100dvh;
+  width: 100vw;
   height: 100dvh;
   scroll-snap-align: center;
   display: flex;
