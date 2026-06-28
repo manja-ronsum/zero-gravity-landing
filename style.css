@@ -197,11 +197,10 @@ p {
 .map-wrapper {
   flex-grow: 1;
   width: 100%;
-  border-radius: 20px;
-  overflow: hidden;
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
-  border: 1px solid rgba(255, 255, 255, 0.15);
   margin: 0;
+  /* マップの上下をグラデーションで透過させて背景に溶け込ませる */
+  -webkit-mask-image: linear-gradient(to bottom, transparent 0%, black 10%, black 90%, transparent 100%);
+  mask-image: linear-gradient(to bottom, transparent 0%, black 10%, black 90%, transparent 100%);
 }
 
 .map-wrapper iframe {
