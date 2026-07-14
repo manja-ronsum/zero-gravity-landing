@@ -64,7 +64,25 @@ html {
 }
 
 .slide-3 {
-  background: linear-gradient(135deg, #5b0060, #ac255e, #f39060);
+  background: linear-gradient(135deg, #1f005c, #5b0060);
+}
+
+.slide-4 {
+  background: linear-gradient(135deg, #5b0060, #870160);
+}
+
+.slide-5 {
+  background: linear-gradient(135deg, #870160, #ac255e);
+}
+
+/* Slide 6 Styles (Access) */
+.slide-6 {
+  background: linear-gradient(135deg, #ac255e, #ca485c);
+}
+
+/* Slide 7 Styles (Contact) */
+.slide-7 {
+  background: linear-gradient(135deg, #ca485c, #e16b5c, #ffb56b);
 }
 
 .content {
@@ -414,16 +432,6 @@ p {
   transform: translateY(0);
 }
 
-/* Slide 4 Styles (Access) */
-.slide-4 {
-  background: linear-gradient(135deg, #870160, #ca485c, #ffb56b);
-}
-
-/* Slide 5 Styles (Contact) */
-.slide-5 {
-  background: linear-gradient(135deg, #ca485c, #e16b5c, #f39060);
-}
-
 .contact-card {
   background: rgba(255, 255, 255, 0.1);
   backdrop-filter: blur(10px);
@@ -511,6 +519,14 @@ p {
   text-align: left;
 }
 
+.participant-card.single-participant {
+  flex-direction: column;
+  padding: 3rem 2rem;
+  text-align: center;
+  max-width: 350px;
+  margin: 0 auto;
+}
+
 .participant-avatar {
   width: 60px;
   height: 60px;
@@ -518,6 +534,13 @@ p {
   object-fit: cover;
   border: 2px solid rgba(255, 255, 255, 0.5);
   flex-shrink: 0;
+}
+
+.participant-card.single-participant .participant-avatar {
+  width: 150px;
+  height: 150px;
+  border-width: 4px;
+  margin-bottom: 1rem;
 }
 
 .participant-info {
