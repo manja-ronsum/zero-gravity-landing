@@ -58,31 +58,31 @@ html {
 }
 
 .slide-2 {
-  background: linear-gradient(rgba(31, 0, 92, 0.6), rgba(172, 37, 94, 0.8)), url('images/rude.webp');
+  background: linear-gradient(145deg, #1f005ccc, #5b0060cc, #870160cc, #ac255ecc, #ca485ccc, #e16b5ccc, #f39060cc, #ffb56bcc), url('images/rude.webp');
   background-size: cover;
   background-position: center;
 }
 
 .slide-3 {
-  background: linear-gradient(135deg, #1f005c, #5b0060);
+  background: linear-gradient(155deg, #1f005c, #5b0060, #870160, #ac255e, #ca485c, #e16b5c, #f39060, #ffb56b);
 }
 
 .slide-4 {
-  background: linear-gradient(135deg, #5b0060, #870160);
+  background: linear-gradient(165deg, #1f005c, #5b0060, #870160, #ac255e, #ca485c, #e16b5c, #f39060, #ffb56b);
 }
 
 .slide-5 {
-  background: linear-gradient(135deg, #870160, #ac255e);
+  background: linear-gradient(175deg, #1f005c, #5b0060, #870160, #ac255e, #ca485c, #e16b5c, #f39060, #ffb56b);
 }
 
 /* Slide 6 Styles (Access) */
 .slide-6 {
-  background: linear-gradient(135deg, #ac255e, #ca485c);
+  background: linear-gradient(185deg, #1f005c, #5b0060, #870160, #ac255e, #ca485c, #e16b5c, #f39060, #ffb56b);
 }
 
 /* Slide 7 Styles (Contact) */
 .slide-7 {
-  background: linear-gradient(135deg, #ca485c, #e16b5c, #ffb56b);
+  background: linear-gradient(195deg, #1f005c, #5b0060, #870160, #ac255e, #ca485c, #e16b5c, #f39060, #ffb56b);
 }
 
 .content {
