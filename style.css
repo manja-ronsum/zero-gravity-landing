@@ -1,4 +1,4 @@
-:root {
+sdふぁs:root {
   --font-main: 'Outfit', sans-serif;
   --color-text: #ffffff;
 }
@@ -9,10 +9,12 @@
   padding: 0;
 }
 
-body, html {
+body,
+html {
   width: 100vw;
   height: 100dvh;
-  overflow: hidden; /* Prevent scrolling outside carousel container */
+  overflow: hidden;
+  /* Prevent scrolling outside carousel container */
   font-family: var(--font-main);
   color: var(--color-text);
   background-color: #000;
@@ -56,20 +58,21 @@ body, html {
 }
 
 .slide-2 {
-  background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.8)), url('images/rude.webp');
+  background: linear-gradient(rgba(31, 0, 92, 0.6), rgba(172, 37, 94, 0.8)), url('images/rude.webp');
   background-size: cover;
   background-position: center;
 }
 
 .slide-3 {
-  background: linear-gradient(135deg, #2b5876, #4e4376);
+  background: linear-gradient(135deg, #5b0060, #ac255e, #f39060);
 }
 
 .content {
   text-align: center;
   padding: 2rem;
   z-index: 10;
-  opacity: 0; /* JS will handle showing it via animation */
+  opacity: 0;
+  /* JS will handle showing it via animation */
 }
 
 h1 {
@@ -147,9 +150,22 @@ p {
 }
 
 @keyframes bounce {
-  0%, 20%, 50%, 80%, 100% { transform: translateY(0); }
-  40% { transform: translateY(-10px); }
-  60% { transform: translateY(-5px); }
+
+  0%,
+  20%,
+  50%,
+  80%,
+  100% {
+    transform: translateY(0);
+  }
+
+  40% {
+    transform: translateY(-10px);
+  }
+
+  60% {
+    transform: translateY(-5px);
+  }
 }
 
 /* Place Image */
@@ -160,7 +176,8 @@ p {
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
   max-width: 100%;
   border: 1px solid rgba(255, 255, 255, 0.15);
-  background: rgba(0, 0, 0, 0.2); /* In case of letterboxing */
+  background: rgba(0, 0, 0, 0.2);
+  /* In case of letterboxing */
   display: flex;
   justify-content: center;
   align-items: center;
@@ -248,7 +265,8 @@ p {
 
 .line-button {
   display: inline-block;
-  background-color: #06C755; /* LINE Official Color */
+  background-color: #06C755;
+  /* LINE Official Color */
   color: #fff;
   text-decoration: none;
   font-weight: 700;
@@ -330,19 +348,45 @@ p {
   animation: pulse 2s infinite;
 }
 
-.dot:nth-child(1) { animation-delay: 0s; }
-.dot:nth-child(2) { animation-delay: 0.2s; }
-.dot:nth-child(3) { animation-delay: 0.4s; }
+.dot:nth-child(1) {
+  animation-delay: 0s;
+}
+
+.dot:nth-child(2) {
+  animation-delay: 0.2s;
+}
+
+.dot:nth-child(3) {
+  animation-delay: 0.4s;
+}
 
 @keyframes pulse {
-  0% { transform: scale(1); opacity: 0.4; }
-  50% { transform: scale(1.5); opacity: 1; }
-  100% { transform: scale(1); opacity: 0.4; }
+  0% {
+    transform: scale(1);
+    opacity: 0.4;
+  }
+
+  50% {
+    transform: scale(1.5);
+    opacity: 1;
+  }
+
+  100% {
+    transform: scale(1);
+    opacity: 0.4;
+  }
 }
 
 @keyframes fadeIn {
-  from { opacity: 0; transform: translateY(20px); }
-  to { opacity: 1; transform: translateY(0); }
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
 /* Button */
@@ -363,7 +407,7 @@ p {
 .cta-button:hover {
   background: rgba(255, 255, 255, 0.3);
   transform: translateY(-2px);
-  box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
 }
 
 .cta-button:active {
@@ -372,7 +416,7 @@ p {
 
 /* Slide 4 Styles */
 .slide-4 {
-  background: linear-gradient(135deg, #111, #333);
+  background: linear-gradient(135deg, #870160, #ca485c, #ffb56b);
 }
 
 .contact-card {
