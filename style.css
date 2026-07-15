@@ -80,14 +80,9 @@ html {
   background: linear-gradient(185deg, #1f005c, #5b0060, #870160, #ac255e, #ca485c, #e16b5c, #f39060, #ffb56b);
 }
 
-/* Slide 7 Styles (Access) */
+/* Slide 7 Styles (Contact) */
 .slide-7 {
   background: linear-gradient(195deg, #1f005c, #5b0060, #870160, #ac255e, #ca485c, #e16b5c, #f39060, #ffb56b);
-}
-
-/* Slide 8 Styles (Contact) */
-.slide-8 {
-  background: linear-gradient(205deg, #1f005c, #5b0060, #870160, #ac255e, #ca485c, #e16b5c, #f39060, #ffb56b);
 }
 
 .content {
