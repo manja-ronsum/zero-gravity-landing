@@ -459,7 +459,27 @@ html {
   font-size: 0.85rem;
   color: #64748b;
   font-weight: 500;
-  margin-bottom: 0;
+  margin-bottom: 0.8rem;
+}
+
+.map-direct-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  background: linear-gradient(135deg, #0288d1, #0077b6);
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 0.85rem;
+  font-weight: 800;
+  padding: 0.45rem 1rem;
+  border-radius: 20px;
+  box-shadow: 0 4px 12px rgba(2, 136, 209, 0.35);
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.map-direct-link:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 16px rgba(2, 136, 209, 0.5);
 }
 
 /* Slide 5: Contact Card */
