@@ -141,16 +141,18 @@ html {
 }
 
 .event-title .sub-label {
-  font-size: 1rem;
+  font-size: clamp(0.82rem, 3.6vw, 1rem);
   font-weight: 700;
   color: #fed7aa;
   background: rgba(245, 158, 11, 0.18);
   border: 1px solid rgba(245, 158, 11, 0.4);
-  padding: 0.25rem 1rem;
+  padding: 0.3rem 1.1rem;
   border-radius: 20px;
   backdrop-filter: blur(8px);
   margin-bottom: 0.3rem;
   letter-spacing: 0.5px;
+  max-width: 92vw;
+  white-space: nowrap;
 }
 
 .event-title .main-title {
@@ -226,19 +228,20 @@ html {
 }
 
 .reception-time {
-  font-size: 0.95rem;
-  font-weight: 600;
-  color: #cbd5e1;
+  font-size: clamp(0.95rem, 4vw, 1.15rem);
+  font-weight: 700;
+  color: #f1f5f9;
   margin: 0;
   text-shadow: 0 2px 6px rgba(0, 0, 0, 0.5);
 }
 
 .event-details-text .venue-name {
-  font-size: 1.25rem;
+  font-size: clamp(0.95rem, 4.2vw, 1.25rem);
   font-weight: 800;
   color: #ffd700;
   text-shadow: 0 2px 10px rgba(0, 0, 0, 0.6), 0 0 12px rgba(255, 215, 0, 0.35);
   margin: 0;
+  line-height: 1.35;
 }
 
 .swipe-text {
@@ -570,6 +573,7 @@ html {
   border-radius: 50%;
   border: 3.5px solid #f59e0b;
   box-shadow: 0 0 20px rgba(245, 158, 11, 0.5);
+  background: #ffffff;
 }
 
 .host-badge {
