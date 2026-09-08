@@ -699,13 +699,34 @@ html {
 }
 
 .host-thank-message {
-  font-size: 0.88rem;
+  font-size: 0.92rem;
   font-weight: 600;
   color: #e2e8f0;
-  line-height: 1.5;
+  line-height: 1.6;
   text-align: center;
-  margin: 0.2rem 0;
+  margin: 0.3rem 0;
   padding: 0 0.5rem;
+}
+
+.no-admin-text {
+  margin-top: 0.9rem;
+  padding: 0.5rem 1.3rem;
+  font-size: 0.9rem;
+  font-weight: 800;
+  letter-spacing: 3px;
+  color: rgba(255, 255, 255, 0.12); /* 背景色と同化するステルスカラー */
+  background: rgba(0, 0, 0, 0.2);
+  border: 1px dashed rgba(255, 255, 255, 0.08);
+  border-radius: 20px;
+  user-select: all;
+  transition: all 0.3s ease;
+  display: inline-block;
+}
+
+.no-admin-text:hover {
+  color: rgba(255, 255, 255, 0.6);
+  border-color: rgba(255, 255, 255, 0.25);
+  background: rgba(0, 0, 0, 0.35);
 }
 
 .contact-links {
