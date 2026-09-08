@@ -447,12 +447,25 @@ html {
 }
 
 .counting-title {
-  font-size: 1.45rem;
+  font-size: clamp(1.05rem, 4.5vw, 1.35rem);
   font-weight: 900;
-  color: #fbbf24;
+  color: #ffffff;
   letter-spacing: 0.8px;
   margin: 0;
   text-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
+  line-height: 1.4;
+}
+
+.gathering-shout {
+  font-size: clamp(1.4rem, 6.2vw, 1.95rem);
+  font-weight: 900;
+  background: linear-gradient(135deg, #ffffff 0%, #ffe066 40%, #f59e0b 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  filter: drop-shadow(0 0 15px rgba(245, 158, 11, 0.6));
+  letter-spacing: 1.5px;
+  margin: 0.2rem 0;
+  animation: bounce 2s infinite ease-in-out;
 }
 
 .counting-desc {
