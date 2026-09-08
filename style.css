@@ -617,12 +617,13 @@ html {
   border-radius: 30px;
   color: white;
   text-decoration: none;
-  font-size: 1rem;
+  font-size: clamp(0.82rem, 3.5vw, 1rem);
   font-weight: 800;
   transition: all 0.2s ease;
   width: 100%;
   box-sizing: border-box;
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+  white-space: nowrap;
 }
 
 .contact-btn:hover {
