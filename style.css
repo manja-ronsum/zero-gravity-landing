@@ -708,25 +708,25 @@ html {
   padding: 0 0.5rem;
 }
 
-.no-admin-text {
-  margin-top: 0.9rem;
-  padding: 0.5rem 1.3rem;
-  font-size: 0.9rem;
-  font-weight: 800;
-  letter-spacing: 3px;
-  color: rgba(255, 255, 255, 0.12); /* 背景色と同化するステルスカラー */
-  background: rgba(0, 0, 0, 0.2);
-  border: 1px dashed rgba(255, 255, 255, 0.08);
-  border-radius: 20px;
+.huge-no-admin {
+  font-size: clamp(2.3rem, 10.5vw, 3.8rem);
+  font-weight: 900;
+  letter-spacing: 6px;
+  background: linear-gradient(135deg, rgba(255, 255, 255, 0.45) 0%, rgba(203, 213, 225, 0.28) 50%, rgba(100, 116, 139, 0.18) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  filter: drop-shadow(0 4px 15px rgba(0, 0, 0, 0.9));
+  padding: 2.2rem 0;
+  text-align: center;
+  width: 100%;
+  box-sizing: border-box;
   user-select: all;
   transition: all 0.3s ease;
-  display: inline-block;
 }
 
-.no-admin-text:hover {
-  color: rgba(255, 255, 255, 0.6);
-  border-color: rgba(255, 255, 255, 0.25);
-  background: rgba(0, 0, 0, 0.35);
+.huge-no-admin:hover {
+  filter: drop-shadow(0 0 25px rgba(255, 255, 255, 0.35));
+  transform: scale(1.03);
 }
 
 .contact-links {
